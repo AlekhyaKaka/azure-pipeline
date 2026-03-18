@@ -1,9 +1,14 @@
+# force refresh
+
 trigger: none   # manual run
 
 pool:
   vmImage: 'ubuntu-latest'
 
 steps:
+- script: echo "STEP 1 - YAML LOADED"
+  displayName: "Debug Step"
+  
 - script: |
     echo "Calling Execution Config API..."
 
